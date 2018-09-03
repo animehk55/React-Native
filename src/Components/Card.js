@@ -10,14 +10,14 @@ const Card = (props) => {
 };
 
 const styles = {
-    ContainerStyle: {
+    containerStyle: {
         borderWidth: 1,
         borderRadius: 2,
-        borderColor: 'red',
+        borderColor: '#ddd',
         borderBottomWidth: 0,
         shadowColor: '#000',
-        shadoeOffset: { width: 0, height: 2 },
-        shadoeOpacity: 0.2,
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
         shadowRadius: 2,
         elevation: 1,
         marginLeft: 5,

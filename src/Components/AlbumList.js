@@ -26,7 +26,8 @@ export default class AlbumList extends Component {
             {/** console.log(this.state) */}
             {/** // why is this console not working and also by using this the running app
              is closed and no error is generated too */}
-            <Text>MPSILU . . MPSILU . . MPSILU</Text>
+             {this.renderAlbums()}
+             <Text>MPSILU . . MPSILU . . MPSILU</Text>
             <Text>Notes: {'\n'}*. Defination of state : a plain Javascript object to record
              and respond o user-triggered events.{'\n'}*. When we need to update what a 
              component shows, call 'tis.setState'{'\n'}*. Only change state with 'setState',
@@ -43,7 +44,6 @@ export default class AlbumList extends Component {
             into a new array){'\n'}  return this.state.albums.map(album => Text-tag
             BRACKETalbumdottitleCLOSINGBRACKET);  this.renderAlbums()
             </Text>
-             {this.renderAlbums()}
         </View>
     );
     }
