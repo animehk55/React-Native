@@ -24,7 +24,7 @@ const styles = {
  
     buttonStyle: {
         flex: 1,
-        alignself: 'stretch',   
+        alignself: 'stretch',   //not working alignSelf as it will span the whole area 
         backgroundColor: '#fff',
         borderRadius: 5,
         borderWidth: 1,
