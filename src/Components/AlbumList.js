@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView, Text } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -7,7 +7,7 @@ export default class AlbumList extends Component {
     state = { albums: [] };
 
     componentWillMount() {
-        console.log('Bhosre Chod, zaldi nahi ho raha tha kaya');
+        console.log('zaldi nahi ho raha tha kaya');
         // debugger;
             axios.get('http://rallycoding.herokuapp.com/api/music_albums')
                 .then(response => this.setState({ albums: response.data }));
@@ -22,7 +22,7 @@ export default class AlbumList extends Component {
     render() {
         console.log(this.state);
     return (
-        <View>
+        <ScrollView>
             {/** console.log(this.state) */}
             {/** // why is this console not working and also by using this the running app
              is closed and no error is generated too */}
@@ -52,7 +52,7 @@ export default class AlbumList extends Component {
                 Doubt : {'\n'} why is flexDirection: 'row' not working, as I want to write 
                 two words both in different line
             </Text>
-        </View>
+        </ScrollView>
     );
     }
 }

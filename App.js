@@ -7,7 +7,7 @@ import AlbumList from './src/Components/AlbumList';
 export default class App extends Component<Props> {
   render() {
     return (
-      <View>
+      <View style={{ flex: 1 }}>
         <Header headerText='Sonagreens' />
         <AlbumList />
       </View>
