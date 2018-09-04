@@ -44,6 +44,14 @@ export default class AlbumList extends Component {
             into a new array){'\n'}  return this.state.albums.map(album => Text-tag
             BRACKETalbumdottitleCLOSINGBRACKET);  this.renderAlbums()
             </Text>
+            <Text>
+                {'\n'}
+                {'\n'}
+                {'\n'}
+                {'\n'}
+                Doubt : {'\n'} why is flexDirection: 'row' not working, as I want to write 
+                two words both in different line
+            </Text>
         </View>
     );
     }
