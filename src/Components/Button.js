@@ -1,12 +1,12 @@
     import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-const Button = () => {
+const Button = ({ onPress, children }) => {
     const { buttonStyle } = styles;
     return (
-        <TouchableOpacity>
+        <TouchableOpacity onPress={onPress} style={buttonStyle}>
             <Text style={buttonStyle}> 
-                Click me!!!
+                {children}
             </Text>
         </TouchableOpacity>
     );
@@ -14,7 +14,7 @@ const Button = () => {
 
 const styles = {
     textStyle: {
-        alignSelf: 'center',
+        textAlign: 'center',
         color: '#007aff',
         fontSize: 16,
         fontweight: '600',
@@ -24,7 +24,7 @@ const styles = {
  
     buttonStyle: {
         flex: 1,
-        alignself: 'stretch',   //not working alignSelf as it will span the whole area 
+         //not working alignSelf as it will span the whole area 
         backgroundColor: '#fff',
         borderRadius: 5,
         borderWidth: 1,
@@ -32,6 +32,6 @@ const styles = {
         marginLeft: 5,
         marginRight: 5
     }
-}
+};
 
 export default Button;

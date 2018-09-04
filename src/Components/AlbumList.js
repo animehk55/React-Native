@@ -7,7 +7,7 @@ export default class AlbumList extends Component {
     state = { albums: [] };
 
     componentWillMount() {
-        console.log('Bhosre Chod, zaldi nahi ho raha tha kaya');
+        console.log('zaldi nahi ho raha tha kaya');
         // debugger;
             axios.get('http://rallycoding.herokuapp.com/api/music_albums')
                 .then(response => this.setState({ albums: response.data }));
