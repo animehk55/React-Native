@@ -60,7 +60,7 @@ const styles = {
         marginRight: 10
     },
     imageStyles: {
-        height: 300,
+        height: 800,
         flex: 1,
         width: null
     }
