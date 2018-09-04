@@ -26,15 +26,15 @@ const AlbumDetail = ({ albumAlbum }) => {
                 </View>
                 <View style={headerContentStyle}>
             <Text style={headerTextStyle}>
-                {title}
+                {title} {'\n'}
                 {artist}
             </Text>
             </View>
             </CardSection>
             <CardSection>
                 <Image 
-                    style={imageStyles}
-                    source={{ uri: image }} 
+                style={imageStyles}
+                source={{ uri: image }} 
                 />
             </CardSection>
         </Card>
@@ -44,10 +44,10 @@ const AlbumDetail = ({ albumAlbum }) => {
 const styles = {
     headerContentStyle: {
         flexDirection: 'row', // not workig 
-        justifyContent: 'space-around',
+        justifyContent: 'space-around'
     },
     headerTextStyle: {
-        fontSize: 18
+        fontSize: 18,
     },
     thumbnailStyle: {
         height: 50,
