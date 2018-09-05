@@ -8,16 +8,16 @@ class LoginForm extends Component {
     render() {
         return (
             <Card>
-                <CardSection>
+                <Card>
                     <TextInput 
                         placeholder='user@email.com'
                         label='Email'
                         value={this.state.email}
                         onChangeText={email => this.setState({ email })}
                     /> 
-                </CardSection>
+                </Card>
 
-                <CardSection>
+                <Card>
                     <TextInput
                         secureTextEntry 
                         placeholder="password"
@@ -25,7 +25,7 @@ class LoginForm extends Component {
                         value={this.state.password}
                         onChangeText={password => this.setState({ password })}
                     />
-                </CardSection>
+                </Card>
                 
 
                 <CardSection>

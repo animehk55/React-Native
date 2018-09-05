@@ -13,11 +13,10 @@ const styles = {
     containerStyle: {
         borderBottomWidth: 1,
         padding: 5,
-        backgroundColor: '#fff',
-        // justifyContent: 'flex-Start',    why is the App directly closed
-        // as if this line exexcutes
+        // backgroundColor: '',
+        // justifyContent: 'flex-Start',
         flexDirection: 'row',
-        borderColor: '#ddd',
+        borderColor: '',
         position: 'relative'
     }
 };
