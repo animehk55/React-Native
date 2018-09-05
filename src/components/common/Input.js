@@ -32,7 +32,7 @@ const styles = {
     labelStyle: {
         fontSize: 50,
         flex: 1,
-        paddingLeft: 20 ,
+        paddingLeft: 20,
         flexDirection: 'row',
         alignItems: 'center',
         // backgroundColor: 'black',
