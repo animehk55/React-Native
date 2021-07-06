@@ -11,13 +11,13 @@ const Card = (props) => {
 
 const styles = {
     containerStyle: {
-        borderWidth: 1,
-        borderRadius: 2,
-        borderColor: '#ddd',
-        borderBottomWidth: 0,
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.2,
+        borderWidth: 10,
+        borderRadius: 50,  // change this value many times to get different look
+        borderColor: 'white',
+        borderBottomWidth: 8,
+        shadowColor: 'black',
+        shadowOffset: { width: 20, height: 20 },
+        shadowOpacity: 0.5,
         shadowRadius: 2,
         elevation: 1,
         marginLeft: 5,
@@ -26,4 +26,4 @@ const styles = {
     }
 };
 
-export default Card;
+export { Card };
